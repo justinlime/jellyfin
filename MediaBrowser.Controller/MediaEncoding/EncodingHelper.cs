@@ -2796,7 +2796,8 @@ namespace MediaBrowser.Controller.MediaEncoding
                         && !state.EnableBreakOnNonKeyFrames(outputVideoCodec)
                         && (state.BaseRequest.StartTimeTicks ?? 0) > 0)
                     {
-                        seekParam += " -noaccurate_seek";
+                        // seekParam += " -noaccurate_seek";
+                        Console.Write("test");
                     }
                 }
             }
